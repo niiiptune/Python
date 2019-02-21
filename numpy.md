@@ -12,5 +12,5 @@ a[start:end:step] # start through not past end, by step
 
 Note that **end-1** is the last element of the array.
 
-[SOF Link]("https://stackoverflow.com/questions/509211/understanding-slice-notation")
+SOF Link: "https://stackoverflow.com/questions/509211/understanding-slice-notation"
 
