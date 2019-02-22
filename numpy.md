@@ -110,5 +110,5 @@ def go_fast(a): # Function is compiled to machine code when called the first tim
 print(go_fast(x))
 ```
 
-[Official numba guide](https://numba.pydata.org/numba-doc/latest/user/5minguide.html)
+[Official numba guide](https://numba.pydata.org/numba-doc/latest/user/5minguide.html)  
 [SOF: why numba is faster?](https://stackoverflow.com/questions/25950943/why-is-numba-faster-than-numpy-here)
