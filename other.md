@@ -24,4 +24,6 @@ print("Art: {0:5d}, Price: {1:8.2f}".format(453, 59.058))
 print("Art: {a:5d}, Price: {b:8.2f}".format(a=453, b=59.058))
 ```
 
+[More details](https://www.python-course.eu/python3_formatted_output.php)
+
 ***
