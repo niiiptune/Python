@@ -9,6 +9,7 @@ print("Art: %5d, Price: %8.2f" % (453, 59.058))
 ```
 
 Common conversion formats:
+
 | **Conversion** | **Meaning** |
 | --- | --- |
 | d | Signed integer decimal. |
