@@ -154,4 +154,39 @@ list.sort(reverse=True).pop()
 
 ***
 
+## numpy is slow with for loops
 
+*2019-03-07*
+
+```python
+import numpy as np
+
+example = np.ones([500,500,500], dtype=np.uint8)
+
+def slow():
+     img = example.copy()
+     height, width, depth = img.shape
+     for i in range(0, height):             #looping at python speed...
+         for j in range(0, (width//4)):     #...
+             for k in range(0,depth):       #...
+                 img[i,j,k] = 0
+     return img
+
+
+def fast():
+     img = example.copy()
+     height, width, depth = img.shape
+     img[0:height, 0:width//4, 0:depth] = 0 # DO THIS INSTEAD
+     return img 
+
+np.alltrue(slow() == fast())
+Out[22]: True
+
+%timeit slow()
+1 loops, best of 3: 6.13 s per loop
+
+%timeit fast()
+10 loops, best of 3: 40 ms per loop
+```
+
+[SOF: slow for loops](https://stackoverflow.com/questions/26445153/iterations-through-pixels-in-an-image-are-terribly-slow-with-python-opencv)
