@@ -112,3 +112,28 @@ print(go_fast(x))
 
 [Official numba guide](https://numba.pydata.org/numba-doc/latest/user/5minguide.html)  
 [SOF: why numba is faster?](https://stackoverflow.com/questions/25950943/why-is-numba-faster-than-numpy-here)
+
+***
+
+## Element-wise addition of lists
+
+*2019-03-06*
+
+Method 1: use **map** with **operator.add**:
+
+```python
+from operator import add
+list(map(add, list1, list2))
+```
+
+Method 2: use **zip** with a list comprehension:
+
+```python
+[sum(x) for x in zip(list1, list2)]
+```
+
+[SOF: Element-wise addition of lists](https://stackoverflow.com/questions/18713321/element-wise-addition-of-2-lists)
+
+***
+
+
