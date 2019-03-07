@@ -136,4 +136,22 @@ Method 2: use **zip** with a list comprehension:
 
 ***
 
+## List pop()
+
+*2019-03-06*
+
+The pop() method removes the item at the given index from the list.
+
+If the index passed to the pop() method is not in range, it throws IndexError: pop index out of range exception.
+
+The parameter passed to the pop() method is optional. If no parameter is passed, the default index **-1** is passed as an argument which returns the **last** item.
+
+This method is very handy, for instance if we are to remove the smallest item from the list:
+
+```python
+list.sort(reverse=True).pop()
+```
+
+***
+
 
