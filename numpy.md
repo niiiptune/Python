@@ -94,6 +94,8 @@ if array.size:
     ...
 ```
 
+[SOF: get argmax from an empty array](https://stackoverflow.com/questions/46344772/valueerror-attempt-to-get-argmax-of-an-empty-sequence)
+
 ***
 
 ## numba
