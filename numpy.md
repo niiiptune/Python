@@ -58,7 +58,7 @@ b = a[[[1],[2]], [[1,2,3]]]
 
 ***
 
-## max / amax / maximum
+## max / amax / maximum / argmax
 
 *2019-02-21*
 
@@ -80,9 +80,19 @@ array([2, 4, 6])
 >>> c = np.array([4, 2, 9])
 >>> np.maximum(b, c)
 array([4, 6, 9])
+
+>>> d = np.argmax(a)
+2
 ```
 
 [SOF Link](https://stackoverflow.com/questions/33569668/numpy-max-vs-amax-vs-maximum)
+
+In case the array is empty, we can check the emptiness by:
+
+```python
+if array.size:
+    ...
+```
 
 ***
 
@@ -200,6 +210,8 @@ Also, **deepcopy()** is extremely slow. There's some analysis on SOF.
 ## create a matrix of random numbers
 
 *2019-03-12*
+
+Use **np.random.rand()** to achieve this:
 
 ```python
 >>> import numpy as np
