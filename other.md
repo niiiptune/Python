@@ -52,6 +52,7 @@ continue
 ```
 
 [SOF: manually raise an exception](https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python/24065533)
+
 [SOF: out-of-range index exception](https://stackoverflow.com/questions/11902458/i-want-to-exception-handle-list-index-out-of-range)
 
 ***
