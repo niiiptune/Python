@@ -190,3 +190,23 @@ Out[22]: True
 ```
 
 [SOF: slow for loops](https://stackoverflow.com/questions/26445153/iterations-through-pixels-in-an-image-are-terribly-slow-with-python-opencv)
+
+Also, **deepcopy()** is extremely slow. There's some analysis on SOF.
+
+[SOF: deepcopy() vs copy()](https://stackoverflow.com/questions/24756712/deepcopy-is-extremely-slow/29385667#29385667)
+
+***
+
+## create a matrix of random numbers
+
+*2019-03-12*
+
+```python
+>>> import numpy as np
+>>> np.random.rand(2,3)
+array([[ 0.22568268,  0.0053246 ,  0.41282024],
+       [ 0.68824936,  0.68086462,  0.6854153 ]])
+```
+
+***
+
