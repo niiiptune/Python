@@ -56,3 +56,10 @@ continue
 [SOF: out-of-range index exception](https://stackoverflow.com/questions/11902458/i-want-to-exception-handle-list-index-out-of-range)
 
 ***
+
+## capitalize vs upper
+
+*2019-08-24*
+
+**s.capitalize()**: Cap first letter of the string only
+**s.upper()**: Cap the entire string
