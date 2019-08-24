@@ -62,4 +62,5 @@ continue
 *2019-08-24*
 
 **s.capitalize()**: Cap first letter of the string only
+
 **s.upper()**: Cap the entire string
